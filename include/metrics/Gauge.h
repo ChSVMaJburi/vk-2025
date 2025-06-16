@@ -15,4 +15,3 @@ class Gauge : public IMetric {
   std::atomic<long> count_{};
 };
 }  // namespace metrics
-

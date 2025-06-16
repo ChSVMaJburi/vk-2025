@@ -7,13 +7,12 @@
 namespace metrics {
 
 class Counter : public IMetric {
-public:
+ public:
   void Record(double value) override;
   std::string SnapshotAndReset() override;
 
-private:
+ private:
   std::atomic<long> counter_{};
 };
 
 }  // namespace metrics
-
